@@ -1,0 +1,3 @@
+[0][1]scale2ref[scaled][overlay];
+[overlay]format=argb,colorchannelmixer=aa=1[opacity];
+[scaled][opacity]overlay[ovl]

@@ -1,0 +1,36 @@
+************************************************************************************
+****************************** AHK FFMPEG MOSAIC WALL ******************************
+************************************************************************************
+
+INSTRUCCIONES :
+
+- Instalar ffmpeg.zip en cada computadora que se quiera utilizar
+	http://adaptivesamples.com/how-to-install-ffmpeg-on-windows/
+	1- Descomprimir .zip en una carpeta de fácil acceso, como C:\ffmpeg 
+	2- Click derecho sobre la carpeta "Computer"(o "Mi PC" o "Este Equipo"), elegir la opción Propiedades
+	3- Ir a "Configuración avanzada del equipo" o "Advanced system settings"
+	4- Clickear "Variables de entorno" o "Environment Variables"
+	5- System variables / Path , click en Editar
+	6- Agregar al final de la lista :   ;c:\ffmpeg\bin 
+	7- Listo!
+
+- En cada evento, correr el script de Auto Hot Key (en este caso, script.ahk)
+- Para modificar la transparencia de los overlays, abrir el archivo "script.txt" y modificar el valor ubicado luego de "colorchannelmixer=aa=" Los valores pueden ser entre 0 y 1. El valor por default es "1", esto quiere decir que la opacidad del overlay será la opacidad que tiene originalmente el archivo png. 
+- Guardar las fotos a editar en la carpeta "fotos". Las fotos deben tener la misma relacion de aspecto que los overlays y nunca ser mas chicas que estos.  
+- Guardar los overlays en la carpeta "overlays".
+- Las fotos editadas se guardarán automáticamente en la carpeta "final" 
+- Las fotos usadas se guardaran en la carpeta "usadas"
+
+
+**!IMPORTANTE!** NO modificar el nombre de ninguna carpeta, ni mover alguno de los archivos por separado ! La estructura de la carpeta siempre debe ser :
+
+-/CarpetaDelEvento :
+----/fotos
+----/usadas
+----/overlays
+----/final
+----/overlays_usados
+----script.ahk
+----script.txt
+----leeme.txt
+
